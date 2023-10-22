@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: black;   
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(34, 34, 34);
+}
+
+.card {
+    margin: 10px auto;
+    background-color: white;
+    padding: .4rem .4rem;
+    display: grid;
+    grid-template-columns: 90px auto;
+    gap: 10px;
+}
+
+.card h4 {
+    padding-bottom: .2rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 보여질 최대 줄 수 (세 줄까지) */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
