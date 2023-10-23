@@ -3,6 +3,7 @@ const main = document.querySelector('#primaryMain')
 
 const myKey = '0faea1bcbe374ee78de51a6c71250944'
 const myPath = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
+console.log('iam working')
 
 
 fetch(myPath)
@@ -29,6 +30,8 @@ fetch(myPath)
       }
     }
 
+    console.log('iam working2')
+
     const cards = document.querySelectorAll('.card');
     cards.forEach((card) => {
       card.addEventListener('click', () => {
@@ -39,5 +42,5 @@ fetch(myPath)
   });
 
 
-
+  console.log('iam done')
 
